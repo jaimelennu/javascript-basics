@@ -28,3 +28,12 @@ elem.alt = 'picture of my awesome dog';
 
 //add this element to the top of the body
 document.body.insertBefore(elem, document.body.firstChild);
+
+//create a new img elem
+var kitty= document.createElement('img');
+kitty.src = 'img/cat.jpg';
+kitty.alt = 'picture of my awesome cat';
+
+//add this element to the top of the body
+document.body.appendChild(kitty);
+
