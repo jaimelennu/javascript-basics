@@ -37,3 +37,17 @@ kitty.alt = 'picture of my awesome cat';
 //add this element to the top of the body
 document.body.appendChild(kitty);
 
+function onPuppyClick() {
+	//alert('you clicked my puppy!')
+	document.getElementById('bark').play();
+}
+
+//selecting the puppy pic element
+var pup = document.getElementById('puppy-pic');
+
+
+if (pup.addEventListener)
+	pup.addEventListener('click',onPuppyClick);
+else if (pup.attachEvent)
+	pup.attachEvent('click', onPuppyClick);
+	onPuppyClick
